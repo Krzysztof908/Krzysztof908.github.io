@@ -1,50 +1,38 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f0f0;
-}
-
-header {
-    background-color: #4CAF50;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    background-color: #333;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 10px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: inline-block;
-}
-
-nav ul li a:hover {
-    background-color: #111;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 20px;
-}
-
-footer {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #333;
-    color: white;
-}
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moja Pierwsza Strona</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Witaj na mojej stronie!</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Strona Główna</a></li>
+            <li><a href="#about">O mnie</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Strona Główna</h2>
+            <p>To jest przykładowa strona główna.</p>
+        </section>
+        <section id="about">
+            <h2>O mnie</h2>
+            <p>Jestem uczniem klasy 1 technikum i uczę się tworzenia stron internetowych.</p>
+        </section>
+        <section id="contact">
+            <h2>Kontakt</h2>
+            <p>Możesz się ze mną skontaktować przez e-mail: <a href="mailto:uczen@szkola.pl">uczen@szkola.pl</a></p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Moja Pierwsza Strona</p>
+    </footer>
+</body>
+</html>
