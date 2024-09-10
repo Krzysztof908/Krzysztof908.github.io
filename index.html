@@ -1,70 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sidebar</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-        }
-        header {
-            text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-        }
-        .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex: 1;
-        }
-        .section {
-            padding: 320px 50px;
-            flex: 1;
-        }
-        .left {
-            text-align: left;
-            background-color: silver; 
-        }
-        .center {
-            text-align: center;
-			padding: 0 600px;
-        }
-        .right {
-            text-align: right;
-            background-color: silver;
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #f1f1f1;
-            bottom: 0;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <h2>Header</h2>
-    </header>
-    <div class="container">
-        <div class="section left">
-            <h2>Sidebar left</h2>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Main page</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+            }
+            header {
+                text-align: center;
+                padding: 10px;
+                background-color: #f1f1f1;
+            }
+            .container {
+                display: flex;
+                flex: 1;
+            }
+            .section {
+                color: black;
+                width: 100%; 
+                padding: 2%;
+                text-align: center;
+            }
+            .left {
+                text-align: left;
+                width: 20%; 
+                background-color: green; 
+            }
+            .center {
+                /* text-align: center; */ /*comented out to use alignment from section */
+                width: 100%; 
+                background-color: yellow;            
+            }
+            .right {
+                text-align: right;
+                width: 20%; 
+                background-color: silver;
+            }
+            footer {
+                text-align: center;
+                padding: 10px;
+                background-color: #f1f1f1;
+                bottom: 0;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Header</h2>
+        </header>
+        <div class="container">
+            <div class="section left">
+                <h2>Sidebar left</h2>
+            </div>
+            <div class="section center">
+                <h2>Center long text. Center long text. Center long text.Center long text.Center long text.Center long textCenter long text</h2>
+            </div>
+            <div class="section right">
+                <h2>Sidebar right</h2>
+            </div>
         </div>
-        <div class="section center">
-            <h1>Center</h1>
-        </div>
-        <div class="section right">
-            <h2>Sidebar right</h2>
-        </div>
-    </div>
-    <footer>
-        <h2>Footer</h2>
-    </footer>
-</body>
+        <footer>
+            <h2>Footer</h2>
+        </footer>
+    </body>
 </html>
